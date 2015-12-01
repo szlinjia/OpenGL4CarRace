@@ -61,7 +61,7 @@ I used Google's min3D library to help for loading obj file. <br>This is a piece 
 		camDirection = -.08f;
 	}
 ```
-This piece is for updating camaro and scenes:
+This piece is for updating camera and scenes:
 ```java
 	@Override
 	public void updateScene() {
