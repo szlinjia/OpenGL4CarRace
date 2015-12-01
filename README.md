@@ -14,12 +14,12 @@ Loading 3D model in Android
 The most chanllege part is loading 3D model in Android. I used 3D software "LightWave" to Create car and road. The model in LightWave
 looks like this:<br>
 ![](http://debuggingnow.com/wp-content/uploads/2015/12/3dx.jpg)<br>
-After finishing model creating, LightWave can export model into obj files, which are some special files that records each vertex information
+<br><br>After finishing model creating, LightWave can export model into obj files, which are some special files that records each vertex information
 for OpenGL loading. You can see my obj files locate in res/raw folder. The track_obj is a file to recode race's road such as vertex's cordinate and size
 and so on. The track_mtl indicate the texture picture for each triangle. The files camaro2_obj and camaro2_mtl also show the vertexs 
 information for 3D car.
 Please read this to learn more about obj files. This is the important step to load 3D model in Android:<br>
-https://en.wikipedia.org/wiki/Wavefront_.obj_file
+https://en.wikipedia.org/wiki/Wavefront_.obj_file<br><br>
 I used Google's min3D library to help for loading obj file. <br>This is a piece of loading car model:
 ```java
 	public void initCar(){
@@ -81,7 +81,7 @@ This piece is for updating camaro and scenes:
 		}
 	}
 ```
-You can read the detail source code in ./java/com/roadracerlite/Load3DSFile.java
+You can read more detail code in ./java/com/roadracerlite/Load3DSFile.java
 References
 ------------------------------
 Here are some useful references for my project: <br>
